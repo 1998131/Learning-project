@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="target-densitydpi=device-dpi,width=640,initial-scale=0.5859375,maximum-scale=0.5859375">
+		<title>Hello Amaze UI</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="assets/i/favicon.png">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
+		<style type="text/css">
+			.name {
+				width: 100%;
+				height: 200px;
+				background: red;
+			}
+			.name.select{
+				height: 500px;
+				background: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+
+		<div class="am-modal-actions" id="my-actions">
+			<div class="am-modal-actions-group">
+				<!--<ul class="am-list">
+					<li class="am-modal-actions-header">...</li>
+					<li>
+						<a href="#"><span class="am-icon-wechat"></span> ...</a>
+					</li>
+					<li class="am-modal-actions-danger">
+						<a href="#"><i class="am-icon-twitter"></i> ...</a>
+					</li>
+				</ul>-->
+				<div class="name"></div>
+			</div>
+			<div class="am-modal-actions-group">
+				<button class="am-btn am-btn-secondary am-btn-block" data-am-modal-close>取消</button>
+			</div>
+		</div>
+
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script src="assets/js/handlebars.min.js"></script>
+		<script>
+			$(function() {
+				$('#btn').click(function() {
+					$('#my-actions').modal({
+						onConfirm: function() {
+						
+							alert('删除成功')
+						},
+						onCancel: function() {
+							alert(1233)
+						},
+						closeViaDimmer: 0
+					});
+
+				})
+				$('#my-actions').on('open.modal.amui', function() {
+					console.log('演示弹窗打开了');
+					$('.name').click(function(){
+						$(this).toggleClass('select')
+					})
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

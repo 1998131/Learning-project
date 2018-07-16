@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="target-densitydpi=device-dpi,width=640,initial-scale=0.5859375,maximum-scale=0.5859375">
+		<title>账户</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="assets/i/favicon.png">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="stylesheet" href="assets/css/amazeui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/账户.css" />
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<hesader class="public-head am-cf">
+			<a href="h" class="wap-log am-fl"></a>
+			<nav class="am-cf">
+				<a href="home page.html" class="">首页
+					<span class="oder-numer"></span></a>
+				<a href="Whole work.html">全作品</a>
+				<a href="Personal Center.html" class="nav-click">
+					我的
+					<span class="oder-numer"></span>
+				</a>
+				<a href="Shopping Cart.html">
+					购物车
+					<span></span>
+				</a>
+			</nav>
+		</header>
+		<section class="container">
+			<div class="am-cf big-containern">
+				<div class="content-container1 am-fl">
+					<div class="pwd am-margin-0 am-panel am-panel-default">
+
+						<div class="angle am-panel-bd">
+							修改密码
+						</div>
+					</div>
+
+					<div class="user am-margin-0 am-panel am-panel-default">
+
+						<div class="am-panel-bd am-padding-0">
+							<div class="binding">账号绑定</div>
+							<div class="binding-box">
+								<div class="icon-box">邮箱</div>
+								<div class="angle">点击绑定</div>
+							</div>
+							<div class="binding-box">
+								<div class="icon-box phone-icon">
+									手机
+									<span class="bindphoen-rule"></span>
+								</div>
+								<div class="phone">175****0980</div>
+								<div class="angle">绑定更多</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-container2 am-fr">
+					<div class="form">
+						<form class="am-form">
+							<input class="am-form-field mobile-int" type="text" placeholder="账号绑定的手机号或邮箱">
+							<div class="am-cf">
+								<input class="code-int yellow am-fl" type="text" name="" id="" placeholder="请输入验证码" />
+								<input class="code-btn green am-fr" type="button" value="发送" />
+							</div>
+							<input class="yellow paw-int" type="text" placeholder="请输入6－12位数字或字母密码" />
+							<div class="form-error" style="display: block;">请输入手机号或邮箱</div>
+							<input type="button" class="green determine-btn" value="确定" />
+						</form>
+					</div>
+					
+					<div class="form select">
+						<form class="am-form">
+							<input class="am-form-field mobile-int" type="text" placeholder="请输入要绑定的邮箱">
+							<div class="am-cf">
+								<input class="code-int  am-fl" type="text" name="" id="" placeholder="请输入验证码" />
+								<input class="code-btn green am-fr" type="button" value="发送" />
+							</div>
+							<div class="form-error" style="display: block;">请输入手机号或邮箱</div>
+							<input type="button" class="green determine-btn" value="确定" />
+						</form>
+					</div>
+					<div class="form">
+						<form class="am-form">
+							<input class="am-form-field mobile-int" type="text" placeholder="请输入要绑定的手机">
+							<div class="am-cf">
+								<input class="code-int  am-fl" type="text" name="" id="" placeholder="请输入验证码" />
+								<input class="code-btn green am-fr" type="button" value="发送" />
+							</div>
+							<div class="form-error" style="display: block;">请输入手机号或邮箱</div>
+							<input type="button" class="green determine-btn" value="确定" />
+						</form>
+					</div>
+					<span class="return-btn am-icon-align-justify"></span>
+				</div>
+			</div>
+
+		</section>
+
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<script src="assets/js/amazeui.min.js"></script>
+		<script src="assets/js/handlebars.min.js"></script>
+		<script type="text/javascript">
+			$(".angle").click(function() {
+				$('.big-containern').animate({
+					marginLeft: '-100%'
+				}, 400)
+				$('.form').eq($(this).index()).addClass('select').siblings().removeClass('select')
+				
+			})
+			$('.return-btn').click(function(){
+				$('.big-containern').animate({
+					marginLeft: '0'
+				}, 400)
+			})
+		</script>
+		<script>
+		</script>
+	</body>
+
+</html>

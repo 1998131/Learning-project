@@ -1,0 +1,223 @@
+html{
+	background: #eee ;
+}
+header{
+	height: 90px !important;
+	line-height: 90px !important;
+	background: white !important;
+	border-bottom: 1px solid #d2d2d2 !important
+}
+.am-icon-angle-left{
+	font-size: 40px !important;
+	color: black;
+}
+.am-header-title>.text{
+	color: black !important;
+	font-weight: 700 !important;
+	font-size: 27px !important;
+}
+.editText>i{
+	font-size: 28px !important;
+	color: black;
+}
+header>.left{
+	left: 30px !important;
+}
+header>.right{
+	right: 30px !important;
+}
+section>.commodity{
+	padding: 35px 35px 35px 70px;
+	/*border: 1px red solid;*/
+	position: relative;
+}
+.radio1{
+	position: absolute !important;
+    left: 15px;
+    top: 107px !important;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: bottom;
+    border-color: #d2d2d2;
+    text-indent: 48px;
+    color: #000;
+    white-space: nowrap;
+    line-height: 28px;
+    font-size: 26px;
+    background: #5bb688;
+    border: 1px solid #5bb688;
+    vertical-align: middle;
+    
+}
+.radio-box{
+	position: absolute;
+    left: 0;
+    top: 73px;
+    
+    width: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px
+}
+.radio-click{
+	/*border-color: #5bb688;*/
+	/*margin: 25px 20px;*/
+    /*top: 0;
+    display: block;*/
+}
+
+.commodity>a:after{
+	/*width: 156px;*/
+    /*margin-right: 15px;*/
+   content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: url(../img/042704a211f1a6afd0e7ef50f57cf79c.png) repeat;
+}
+.commodity>a>img{
+	width: 100%;
+}
+.commodity>div{
+	/*border: 1px black solid;*/
+}
+.ellipsis{
+	font-size: 26px;
+	letter-spacing: 0.3rem;
+	padding: 0 0 4px;
+}
+.cart-attr-option{
+	min-height: 90px;
+	font-size: 20px;
+	color: #a0a0a0;
+}
+.cart-attr{
+	font-size: 20px;
+	margin-right: 10px;
+}
+.cart-attr>.ga-cartprice{
+	font-size:26px;
+}
+.cart-attr>label{
+	margin-top: 4px;
+	/*margin-right:5px ;*/
+}
+.total-val-wap{
+}
+.cart-attr>label:before{
+	content: 'x';
+    width: auto;
+    height: auto;
+    /*float: left;*/
+  	color: #000
+}
+.pay-box{
+	padding: ;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: white;
+	display: table;
+}
+.f-boxs{
+	padding-left: 20px !important;
+	/*padding-right: 20px !important*/
+	padding: 30px 0;
+}
+.ga-cartprice:before,.all-ga-cartprice:before{
+	content: '¥';
+    font-weight: 400;
+    display: inline-block;
+}
+.all-ga-cartprice{
+	margin-right: 20px;
+}
+.radio{
+	background: white !important;
+}
+.radio.green{
+	background: #5bb688 !important;
+}
+#check_all{
+	width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    vertical-align: bottom;
+    border-color: #d2d2d2;
+    text-indent: 48px;
+    color: #000;
+    white-space: nowrap;
+    /*font-size: 26px;*/
+    line-height: 28px;
+	font-size: 26px;
+	/*border: 1px solid red;*/
+	/*background: red;*/
+	/*background: #5bb688;*/
+	background: white;
+    border: 1px solid #5bb688;
+    vertical-align: middle;
+}
+#check_all.green{
+	background: #5bb688;
+}
+.radio-click:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/vote-sure_279d364.png) center no-repeat;
+    background-size: 60% auto;
+    content: "";
+    position: absolute;
+}
+.f-boxs>dl>dt {
+    font-size: 26px;
+    font-weight:300;
+}
+#lastprice_box,.lastprice_box1{
+	vertical-align: middle;
+}
+.btn{
+	background: #000;
+	color: white;
+	display: table-cell;
+	height: 101px;
+	line-height: 101px;
+	text-align: center;
+	font-size: 26px;
+}
+.introduce{
+	display: block;
+}
+.introduce2{
+	display: none;
+}
+.introduce2 .cart-attr-option{
+	min-height: 100px !important;
+}
+.modal-mum>div{
+	/*height: 3rem !important;*/
+	/*line-height: 2.5rem !important;*/
+	border: 1px #d2d2d2 solid;
+	font-size: 25px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+.modal-mum>div:nth-child(1),.modal-mum>div:nth-child(3){
+	width: 52px;
+	
+}
+.modal-mum>div:nth-child(2){
+	width: 90px;
+}

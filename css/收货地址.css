@@ -1,0 +1,104 @@
+html{
+	background: #eee ;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: white;
+}
+h1{
+	padding: 0;
+	margin: 0;
+}
+i,em {
+	font-style: normal;
+}
+.am-with-fixed-header{
+	padding: 0 !important;
+}
+header{
+	height: 90px !important;
+	line-height: 90px !important;
+	background: white !important;
+	border-bottom: 1px solid #d2d2d2 !important
+}
+.am-icon-angle-left{
+	font-size: 40px !important;
+	color: black;
+}
+.am-header-title>.text{
+	color: black !important;
+	font-weight: 400 !important;
+	font-size: 24px !important;
+}
+.editText>i{
+	font-size: 28px !important;
+	color: black;
+}
+header>.left{
+	left: 30px !important;
+}
+header>.right{
+	right: 30px !important;
+}
+.container{
+	/*height: 300px;*/
+	/*background: red;*/
+	margin-top: 90px;
+}
+.addresBox{
+	background: white;
+}
+.addresBox>li{
+	padding: 25px 35px !important;
+	position: relative;
+	border-bottom: #d2d2d2 1px solid !important
+}
+.addresBox>li>h1{
+	line-height:1.1 ;
+	font-size: 24px
+}
+.adr{
+	line-height: 30px;
+    padding-top: 10px;	
+    font-size:22px;
+    color: #898989;
+}
+.adr-s:before{
+	content: '默认';
+    width: 54px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    border: #9dd3b8 1px solid;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #9dd3b8;
+}
+.check{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 35px;
+	font-size: 34px;
+	color: #898989;
+}
+.add-address {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 80px;
+    color: #fff;
+    background: #5bb688;
+    text-align: center;
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: 700;
+    z-index: 3;
+}
